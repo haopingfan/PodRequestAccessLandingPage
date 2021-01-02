@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,126 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Pod request access landing page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+  	* {
+  		background-color: #121725;
+      font-family: 'Chivo', sans-serif;
+      font-weight: 300;
+  	}
+  	main {
+  		position: absolute;
+  		width: 88.541666666%;
+  		height: 71.111111111%;
+  		left: 11.458333333%;
+  		top: 14.444444444%;
+  	}
+    #image-host {
+      position: absolute;
+      height: 100%;
+      width: 69.647058823%;
+      left: 30.352941176%;
+    }
+    #container {
+      position: absolute;
+      width: 56.705882352%;
+      top: 20.46875%;
+      bottom: 0;
+    }
+    #container > div {
+      position: absolute;
+      top: 12.171507607%;
+      right: 11.394891945%;
+      bottom: 0;
+    }
+    #container p > span:first-child {
+      font-size: 3.5vw;
+      color: #54E6AF;
+      text-transform: uppercase;
+    }
+    #container p > span:nth-child(2) {
+      font-size: 3.5vw;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+    #container p:nth-child(2) {
+      color: #C2CBE5;
+      width: 67.917293233%;
+      font-size: 1.25vw;
+      line-height: 1.944444444vw;
+    }
+    #container input {
+      box-sizing: border-box;
+      width: 64.210526315%;
+      padding: 14px 180px 14px 32px;
+      border-radius: 28px;
+      line-height: 28px;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      background-color: #2C344B;
+      color: #FFFFFF;
+    }
+    #container input::placeholder {
+      color: #FFFFFF;
+      opacity: 0.5;
+    }
+    #container button {
+      margin-left: -170px;
+      padding: 9px 27px;
+      border-radius: 28px;
+      line-height: 28px;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      background-color: #54E6AF;
+      color: #121725;
+    }
+    #image-podcasts {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      right: 20%;
+      left: 0;
+      justify-content: space-between;
+    }
+    #logo {
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+    #bg-pattern-dots{
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+    }
+  </style>
 </head>
 <body>
-  Publish your podcasts everywhere.
-
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
+	<main>
+    <img src="./assets/desktop/logo.svg" id="logo">
+    <img src="./assets/desktop/image-host.jpg" id="image-host">
+    <div id="container">
+      <div>
+        <p>
+          <span>Publish Your Podcasts<br/></span>
+          <span>Everywhere.</span>
+        </p>
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
+        </p>
+        <input placeholder="Email address"></input>
+        <button>Request Access</button>
+        <div id="image-podcasts">
+          <img src="./assets/desktop/spotify.svg"></img>
+          <img src="./assets/desktop/apple-podcast.svg"></img>
+          <img src="./assets/desktop/google-podcasts.svg"></img>
+          <img src="./assets/desktop/pocket-casts.svg"></img>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/desktop/bg-pattern-dots.svg" id="bg-pattern-dots">
+  </main>
 </body>
 </html>
