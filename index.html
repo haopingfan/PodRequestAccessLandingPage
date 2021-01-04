@@ -101,6 +101,7 @@
       right: 187px;
       left: 0;
       justify-content: space-between;
+      align-items: center;
     }
     #logo {
       position: absolute;
@@ -113,8 +114,10 @@
       bottom: -52px;
       background-color: rgba(0, 0, 0, 0);
     }
-    
-    @media screen and (max-width: 768px) {
+    #image-podcasts > img:nth-child(3) {
+      height: 18px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 376px) {
       * {
         overflow: hidden;
       }
@@ -168,6 +171,103 @@
         margin-top: 31px;
       }
     }
+    @media screen and (max-width: 375px) {
+      * {
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        width: 375px;
+        height: 667px;
+        left: 0;
+        top: 0;
+      }
+      #image-host {
+        position: absolute;
+        top: 0px;
+        left: -385px;
+        height: 667px;
+        width: 1001px;
+        z-index: 2;
+        opacity: 0.1;
+      }
+      #logo {
+        left: 120px;
+        top: 62px;
+      }
+      #bg-pattern-dots {
+        display: none;
+      }
+      #container {
+        left: 24px;
+        top: 175px;
+        width: 327px;
+        height: 398px;
+      }
+      #container > div {
+        position: static;
+        width: auto;
+        height: 398px;
+      }
+      #container p {
+        text-align: center;
+      }
+      #container p > span:first-child, #container p > span:nth-child(2) {
+        font-size: 25px;
+        line-height: 38px;
+      }
+      #container p:nth-child(2) {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 25px;
+        width: auto;
+      }
+      #container input {
+        position: relative;
+        width: 327px;
+        padding: 9px 32px;
+        background-color: #2C344B;
+        z-index: 3;
+      }
+      #container button {
+        position: relative;
+        margin-top: 16px;
+        margin-left: 0px;
+        padding: 9px 109px;
+        z-index: 3;
+      }
+      #input-button {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+      }
+      #image-podcasts {
+        margin-top: 0;
+        display: flex;
+        position: absolute;
+        width: 327px;
+        top: 225px;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        justify-content: space-around;
+      }
+      #image-podcasts > img:first-child {
+        height: 17px;
+      }
+      #image-podcasts > img:nth-child(2) {
+        height: 17px;
+      }
+      #image-podcasts > img:nth-child(3) {
+        height: 11px;
+      }
+      #image-podcasts > img:nth-child(4) {
+        height: 15px;
+      }
+    }
+  }
   </style>
 </head>
 <body>
