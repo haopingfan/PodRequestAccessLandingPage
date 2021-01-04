@@ -39,11 +39,13 @@
     }
     #container p > span:first-child {
       font-size: 52px;
+      line-height: 62px;
       color: #54E6AF;
       text-transform: uppercase;
     }
     #container p > span:nth-child(2) {
       font-size: 52px;
+      line-height: 62px;
       color: #FFFFFF;
       text-transform: uppercase;
     }
@@ -111,12 +113,69 @@
       bottom: -52px;
       background-color: rgba(0, 0, 0, 0);
     }
+    
+    @media screen and (max-width: 768px) {
+      * {
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        width: 768px;
+        height: 1024px;
+        left: 0;
+        top: 0;
+      }
+      #image-host-wrapper{
+        position: relative;
+        left: 277px;
+        width: 491px;
+        height: 767px;
+        overflow: hidden;
+      }
+      #image-host {
+        top: 0px;
+        left: -387px;
+        height: 767px;
+        width: 1152px;
+      }
+      #logo {
+        left: 39px;
+        top: 50px;
+      }
+      #bg-pattern-dots {
+        left: 30px;
+        bottom: 0px;
+      }
+      #container {
+        top: 258px;
+        left: 39px;
+        width: 635px;
+        height: 509px;
+      }
+      #container > div {
+        width: 635px;
+        height: 416px;
+        top: 93px;
+        right: 0;
+      }
+      #container p > span:first-child, #container p > span:nth-child(2) {
+        font-size: 48px;
+        line-height: 56px;
+      }
+      #container p:nth-child(2) {
+        margin-top: 31px;
+      }
+    }
   </style>
 </head>
 <body>
 	<main>
     <img src="./assets/desktop/logo.svg" id="logo">
-    <img src="./assets/desktop/image-host.jpg" id="image-host">
+    <div id="image-host-wrapper">
+      <img src="./assets/desktop/image-host.jpg" id="image-host">
+    </div>
     <div id="container">
       <div>
         <p>
